@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <style>
+        p{
+            color: rgb(20, 214, 20);
+            background-color: powderblue;
+            border: 1.5rem outset rgb(211, 39, 211);
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 1.3;
+            font-family: "helvetica neue";
+            font-family: monospace;
+        }
+        p{font: bold 5rem/1.3 "helvetica neue", monospace;}
+        p:active{color: red;}
+        p::selection{color:rgb(3, 1, 1); background-color: salmon;}
+    </style>
+</head>
+<body>
+    <p>
+        띄어쓰기는 따옴표로 감싼다.
+        <br>
+        monospace는 sans-serif로만 표현
+        <br>
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </p>
+</body>
+</html>

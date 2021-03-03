@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float holy grail layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid gray;
+            width: 540px;
+            margin: auto;
+        }
+        header{
+            border-bottom: 1px solid greenyellow;
+            text-align: center;
+        }
+        nav{
+            float: left; width: 120px; border-right: 1px solid gray;
+        }
+        article{
+            float: left; width: 300px; 
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left: -1px;
+        }
+        aside{
+            float: left; width: 120px; border-left: 1px solid gray;
+            margin-left: -1px;
+            text-align: center;
+        }
+        footer{
+            clear: both; border-top: 1px solid gray; padding: 20px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>position</li>
+                    <li>float</li>
+                    <li>flex</li>
+                </ul>
+            </nav>
+            <article>
+                <h2>float</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ipsum aut, corporis quis magni ad animi voluptatum error, sequi non earum quae. Voluptatibus similique accusantium labore aspernatur, saepe nisi ipsum eius sapiente, vitae alias aperiam distinctio accusamus molestiae obcaecati ipsa est provident a! Libero odio beatae placeat fugiat officiis vel voluptatum doloribus et quasi pariatur, culpa quis sapiente dolore deserunt harum. Maiores aut nemo doloremque illo nesciunt eum laborum harum sapiente quae blanditiis accusantium, modi voluptatum, eveniet molestiae sit vero. Esse aspernatur quos optio fugiat obcaecati consequatur eligendi, praesentium maxime, amet laborum itaque consequuntur officia eum, commodi modi aliquid id.
+            </article>
+            <aside>
+                advertize
+            </aside>
+        </section>
+        <footer>
+            <a href="대깨워치.html">copyleft</a>
+        </footer>
+    </div>
+</body>
+</html>

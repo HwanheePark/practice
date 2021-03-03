@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        img{
+            transition: all 1s;
+            filter: grayscale(100);
+            width: 500px;
+        }
+        img:hover{
+            filter: none;
+            width: 800px;
+        }
+        h1{
+            filter: blur(1px);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        filter:blur 는 흐릿해진다 filter:grayscale 은 흑백
+    </h1>
+    <img src="winter.jpg" alt="winter">
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+            order: 1;
+        }
+        nav{
+            order: 0;
+        }
+        aside{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>header: 생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>nav: html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                main: ationem accusantium quibusdam velit voluptatum quidem fugit corrupti animi porro dolor ea sunt, quod, sed blanditiis debitis dolores sint quae ipsam consequuntur fugiat modi. Laudantium quam eos odit quisquam illo, ducimus distinctio dolorum consequatur voluptatum sapiente officia alias, nostrum explicabo adipisci velit! Corporis eius deserunt earum nam minima fugiat, quos mollitia. Assumenda eveniet est consectetur? Vel sequi laboriosam ipsa repellat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero consequuntur qui aut veniam quia labore provident odio nam rerum ipsa.
+            </main>
+            <aside>
+                aside: advertise
+            </aside>
+        </section>
+        <footer>
+            <a href="file:///C:/Users/Hwanhee%20Park/Desktop/CSS/%EB%8C%80%EA%B9%A8%EC%9B%8C%EC%B9%98.html">
+            footer: 홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

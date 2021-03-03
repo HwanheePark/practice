@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading</title>
+    <style>
+        /* li{color: red !important;} */
+        li{color: red;}
+        #idsel{color:orange;}
+        .classsel{color: green;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li id="idsel" class="classsel" style="color:powderblue">CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h2>적용순위</h2>
+    <ol>
+        <li id="idsel" class="classsel"  style="color: powderblue;">style attribute</li>
+        <li id="idsel" class="classsel">id selector</li>
+        <li class="classsel">class selector</li>
+        <li>tag celector</li>
+    </ol>
+    style 속성이 다이김
+</body>
+</html>

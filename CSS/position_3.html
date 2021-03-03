@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html{
+            border: 2px solid red;
+            margin: 20px;
+            margin-top: 30px;
+            font-family: 'Dancing Script', cursive;
+            background-color: darkgoldenrod;
+        }
+        /* body{
+            padding-top: 0px;
+        } */
+        #parent, #other{
+            border: 1px solid orange;
+        }
+        #large{
+            height: 10000px;
+            background-color: cadetblue;
+        }
+        #me{
+            background-color: rgb(31, 29, 29);
+            color: blanchedalmond;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+</body>
+</html>

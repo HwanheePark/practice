@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_basic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Dancing Script', cursive;
+        }
+        .container{
+            background-color: palegoldenrod;
+            height: 200px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .item{
+            color: purple;
+            background-color: springgreen;
+            border:1px solid seagreen;
+        }
+        .felx{
+            background-color: violet;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        .item2{
+            background-color: rgb(96, 111, 238);
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="felx">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+    </div>
+</body>
+</html>

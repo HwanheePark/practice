@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        li{
+            color: brown;font-size: 30px;text-decoration: underline;
+        }
+        #select{
+            color: chartreuse;font-size: 20px; <!--select는 select태그에 있다-->
+        }
+    </style>
+</head>
+<body>
+    <form action="file:///C:/Users/Hwanhee%20Park/Desktop/CSS/%EB%8C%80%EA%B9%A8%EC%9B%8C%EC%B9%98.html" 
+    method="GET" autocomplete="on">
+        <select id="select" name="test" required>
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <br>
+        <input type="number" name="number" placeholder="number" required autofocus>
+        <br>
+        <input type="range" name="range" min="0" max="100" required>
+        <br>
+        <input type="text" name="id" placeholder="id(영어로 시작해서 숫자끝)" 
+        pattern="[a-zA-Z].+[0-9]" required>
+        <br>
+        <input type="password" name="pwd" placeholder="password" autocomplete="off" required>
+        <br>
+        <input type="datetime" name="datetime" placeholder="datetime" required>
+        <br>
+        <input type="submit">
+        <ul>
+            <li>색은 갈색으로</li>
+            <li>글씨사이즈는</li>
+            <li>30px</li>
+            <li>밑줄</li>
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="연습">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Hwanhee">
+    <meta http-equiv="refresh" content="600">
+    <style>
+        html{color: red;}
+        body{border:1rem solid orange}
+        #textarea{color: blue;background-color: blanchedalmond;}
+        select{color: dodgerblue;background-color: darkseagreen;}
+        .pattern{color: darkred;background-color: rgb(93, 231, 231);}
+        #li{color: yellow;background-color: thistle;font-size: 3rem;}
+        ol{font-size: 2rem; border: 1px solid purple;}
+        ol:hover{color: royalblue;}
+        h1{font-size: 4rem;}
+    </style>
+    <title>복습</title>
+</head>
+<body>
+    <header>
+        <textarea name="빈칸" id="textarea" cols="30" rows="3" autofocus>
+읽지말고 써보자
+줄줄 나올 때까지
+        </textarea>
+    </header>
+
+    <article>
+        <br>
+        <select name="선택" id="select" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <input type="radio" name="radio" value="a">
+        <input type="radio" name="radio" value="b">
+        <input type="radio" name="another" value="c">
+        <br>
+        <h1 style="color: hotpink;">우선순위</h1>
+        <ol>
+            <li id="li" style="color: lawngreen !important;">!important</li>
+            <li>style attribute</li>
+            <li>id selector</li>
+            <li>class selector</li>
+            <li>tag selector</li>
+                <ol style="background-color: rgb(189, 110, 110);">
+                    <li>ol안의</li>
+                    <li>ol</li>
+                </ol>
+        </ol>
+        <input type="text" class="pattern" size="27" pattern="[a-zA-Z].+[0-9]" placeholder="영어로시작 숫자로 끝나는 3글자입력">
+    </article>
+    <input type="hidden" name="숨겨진" value="제라툴">
+</body>
+</html>
