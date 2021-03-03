@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minesweeper</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id='hor' placeholder="horizontal amount" value='10'>
+    <input type="number" id="ver" placeholder="verticla amount" value="10">
+    <input type="number" id="mine" placeholder="mine amount" value="10">
+    <button id="execution">execution</button>
+    <table id="table">
+        <thead>
+            <tr>
+                <td>
+                    <span id="timer">0</span>
+                    sec
+                </td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="test108.js"></script>
+</body>
+</html>
