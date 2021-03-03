@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test14</title>
+</head>
+<body>
+    <script>
+        // var grades = {'Math' : 1, 'English' : 2, 'Languege' : 3};
+        // var grades = {};
+        var grades = new Object();
+        grades['Math'] = 1;
+        grades['English'] = 2;
+        grades['Languege'] = 3;
+        document.write(grades['Math']+'<br />');
+        document.write(grades.English+'<br />');
+        document.write(grades['Lan'+'guege']+'<br />'+'<br />');
+
+        for(key in grades){
+            document.write(key+'<br />');
+        }
+        for(key in grades){
+            document.write(grades[key]+'<br />');
+        }
+        for(name in grades){
+            document.write('subject : '+name+' / grade : '+grades[name]+'<br />');
+        }
+    </script>
+</body>
+</html>

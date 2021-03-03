@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test39</title>
+</head>
+<body>
+    <script>
+        function fun_game(game){
+            return{
+                get_game : function(){
+                    return game;
+                },
+                set_game : function(_game){
+                    if(typeof _game === 'string'){
+                        game = _game;
+                    } else {
+                        document.write('문자로 입력하시오'+'</br>');
+                    }
+                }
+            }
+        }
+        var overwatch = fun_game('overwatch');
+        document.write(overwatch.get_game()+'</br>');
+        overwatch.set_game('대깨옵');
+        document.write(overwatch.get_game()+'</br>');
+        overwatch.set_game(123);
+        document.write(overwatch.get_game()+'</br>');
+    </script>
+</body>
+</html>

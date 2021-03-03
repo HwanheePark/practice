@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습연습~</title>
+</head>
+<body>
+    <script>
+        (function(){
+            i = 0;
+            while(i < 10){
+                document.write(i+'<br />');
+                i += 1;
+            }
+        })();
+        var member = ['a','b','c'];
+        document.write(member[2]+member[1]+member[1]+member[0]+'<br />');
+        function jp(){
+            return ['Tokyo','Osaka','Sapporo']
+        }
+        var member2 = jp();
+        document.write(member2[0]+'에 가고 '+member2[1]+'도 가고 '+member2[2]+"도 가고싶다");
+        var d = ['세','글','자'];
+        document.write('<br />'+d.length+'<br />');
+        function helloworld(){
+            return['h','e','l','o'];
+        }
+        var helloworld = helloworld();
+        for(e=0;e<helloworld.length;e++){
+            document.write(helloworld[e].toUpperCase()+'<br />');
+        };
+    </script>
+</body>
+</html>

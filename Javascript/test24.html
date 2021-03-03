@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test24</title>
+</head>
+<body>
+    <script>
+        // var myapp = {}
+        // myapp.calculator = {
+        //     'left' : null,
+        //     'right' : null
+        // }
+        // myapp.coodinate = {
+        //     'left' : null,
+        //     'right' : null
+        // }
+        // myapp.calculator.left = 5;
+        // myapp.calculator.right = 10;
+        // function sum(){
+        //     return myapp.calculator.left+myapp.calculator.right;
+        // }
+        // document.write(sum()+'<br />');
+
+        (function(){
+            var myapp = {}
+            myapp.calculator = {
+                'left' : null,
+                'right' : null
+            }
+            myapp.coodinate = {
+                'left' : null,
+                'right' : null
+            }
+            myapp.calculator.left = 5;
+            myapp.calculator.right = 10;
+            function sum(){
+                return myapp.calculator.left+myapp.calculator.right;
+            }
+            document.write(sum()+'<br />');
+        }())
+    </script>
+</body>
+</html>

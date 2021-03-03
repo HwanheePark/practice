@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test21</title>
+</head>
+<body>
+    <script>
+        // var grades={
+        //     'list':{'Math':1,'Science':2,'Computer':3},
+        //     'show':function(){
+        //         for(var name in this.list){
+        //             document.write(name+' / '+this.list[name]+'<br />');
+        //         }
+        //     }
+        // }
+        // grades.show();
+        var grades={
+            'list':{'Math':1,'Science':2,'Computer':3}
+        };
+        function g(){
+            for(var name in grades['list']){
+                document.write(name+' / '+grades['list'][name]+'<br />');
+            }
+        };
+        g();
+    </script>
+</body>
+</html>

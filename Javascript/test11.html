@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test11</title>
+</head>
+<body>
+    <script>
+        for(var i=1;i<=10;i++){
+            document.write(i+'<br />');
+        }
+        for(a=0;a<10;a++){
+            document.write((a+1)+'<br />');
+        }
+        for(a=0;a<10;a++){
+            document.write((a+5)+'<br />');
+            if((a+5)===10){
+                break;
+            }
+        }
+        function numbering(){
+            var b = 0;
+            while(b<10){
+                document.write(b+"<br />");
+                b += 1;
+            }
+        }
+        for(var b=0;b<1000;b++){
+            document.write('-'+(b+1)+'번째-<br />');
+            numbering();
+        }
+    </script>
+</body>
+</html>

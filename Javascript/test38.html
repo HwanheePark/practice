@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test38</title>
+</head>
+<body>
+    <script>
+        function factory_movie(title){
+            return{
+                get_title : function(){
+                    return title;
+                },
+                set_title : function(_title){
+                    title = _title;
+                }
+            }
+        }
+        document.write(factory_movie('aa').get_title()+'</br/>');
+
+        var ghost = factory_movie('ghost in the shell');
+        var matrix = factory_movie('Matrix');
+        document.write(ghost.get_title()+'</br/>');
+        document.write(matrix.get_title()+'</br/>');
+        ghost.set_title('공각기동대');
+        document.write(ghost.get_title());
+    </script>
+</body>
+</html>

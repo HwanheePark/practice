@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test16</title>
+    <style>
+        body{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var grades = {'html' : 1, 'css' : 2, 'js' : 7};
+        for(name in grades){
+            document.write(name+' : '+grades[name]+'<br />');
+        }
+
+        for(a=0;a<100;a++){
+            document.write((a+20)+'<br />');
+            if((a+20)===25){
+                break;
+            }
+        }
+
+        var subject = {
+            'list' : {'Math':1,'English':2,'languege':{'Japanese':'one','English':'two'}}
+        }
+        document.write(subject['list']['languege']['Japanese']+'<br />');
+
+        var christmas = {
+            'white' : function(){
+                document.write('Merry Christmas'+'<br />');
+            }
+        }
+        christmas['white']();
+    </script>
+</body>
+</html>

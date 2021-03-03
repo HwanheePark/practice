@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test28</title>
+</head>
+<body>
+    <script>
+    (function myappfn(){
+        var myapp = {}
+        myapp.calculator = {
+            'left' : null,
+            'right' : null
+        }
+        myapp.coordinate = {
+            'left' : null,
+            'right' : null
+        }
+        myapp.calculator.left = 10;
+        myapp.calculator.right = 15;
+        function sum(){
+            return myapp.calculator.left+myapp.calculator.right;
+        };
+        document.write(sum()+'<br />');
+    }());
+
+    </script>
+</body>
+</html>

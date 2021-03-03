@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test43</title>
+</head>
+<body>
+    <script>
+        function Person(a){
+            this.name = a;
+        }
+        Person.prototype.introduce = function(){
+            return 'Hi! My name is '+this.name;
+        }
+        function Programmer(a){
+            this.name = a;
+        }
+        Programmer.prototype = new Person();
+        Programmer.prototype.coding = function(){
+            return 'Hello World!';
+        }
+        function Designer(a){
+            this.name = a;
+        }
+        Designer.prototype = new Person();
+        Designer.prototype.design = function(){
+            return 'Beautiful!';
+        }
+
+        var p1 = new Programmer('hwanhee');
+        document.write(p1.introduce()+'</br>');
+        document.write(p1.coding()+'</br>');
+        var p2 = new Designer('Jobs');
+        document.write(p2.introduce()+'</br>');
+        document.write(p2.design()+'</br>');
+    </script>
+</body>
+</html>

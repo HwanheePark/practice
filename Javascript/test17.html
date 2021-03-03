@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test17</title>
+    <style>
+        body{
+            font-size: 100px;
+            color:aqua
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var grades = {
+            'list' : {'Math':1,'English':2,'Science':3},
+            'show' : function(){
+                for(var name in this.list){
+                    document.write(name+'/'+this.list[name]+'<br />');
+                }
+            }
+        }
+        grades['show']();  //따옴표 빼먹지말자
+
+        var country = {
+            'list' : {'Korea':1,'Japen':2,'USA':3},
+            'show' : function(){
+                for(var name in this.list){
+                    document.write(name+'/'+this.list[name]+'<br />');
+                }
+            }
+        }
+        country['show']();
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test13</title>
+</head>
+<body>
+    <script>
+        var a =['a','b','c'];
+        a.splice(1,0,'d');
+        document.write(a+'<br />');
+        a.splice(0,4,'정보가','삭제되었습니다.');
+        document.write(a+'<br />');
+
+        var b = [1,2,3,4,5,6,7,8];
+        // document.write(b.splice(2)+'<br />');
+        // document.write(b+'<br />');
+        document.write(b.splice(2,4)+'<br />');
+        document.write(b+'<br />');
+
+        var c = ['aa','bb','cc'];
+        document.write(c.shift()+'<br />');//return값
+        document.write(c+'<br />');
+        c.pop();
+        document.write(c+'<br />');
+        document.write(c.pop()+'<br />');
+        document.write(c+'<br />');
+
+        var number = [3,2,4,1,5];
+        document.write(number+'<br />');
+        document.write(number.sort()+'<br />');
+        document.write(number.reverse()+'<br />');
+    </script>
+</body>
+</html>

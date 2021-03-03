@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스킨라빈스 31</title>
+</head>
+<body>
+    <script>
+        var value = 2;
+        alert('베스킨라빈스 31!!');
+        var answer = Number(prompt('1, 2!!   (1~3중에 하나의 숫자를 고르시오)'));
+        while(true){
+            if(answer === 1){
+                value += 1;
+                if(value >= 31){
+                    alert('31!! 내가 이겼닭!!킄킄ㅋㅋㅋ');
+                    break;
+                };
+                alert('(현재 : '+value+')   음.............나는!!');
+                alert((value+1)+', '+(value+2)+', '+(value+3)+'!!');
+                value += 3;
+                answer = Number(prompt('(현재 : '+value+')   Your choice~!'));
+            } else if(answer === 2){
+                value += 2;
+                if(value >= 31){
+                    alert('31!! 내가 이겼닭!!킄킄ㅋㅋㅋ');
+                    break;
+                };
+                alert('(현재 : '+value+')   음.............나는!!');
+                alert((value+1)+', '+(value+2)+'!!');
+                value += 2;
+                answer = Number(prompt('(현재 : '+value+')   Your choice~!'));
+            } else if(answer === 3){
+                value += 3;
+                if(value >= 31){
+                    alert('31!! 내가 이겼닭!!킄킄ㅋㅋㅋ');
+                    break;
+                };
+                alert('(현재 : '+value+')   음.............나는!!');
+                alert((value+1)+'!!');
+                value += 1;
+                answer = Number(prompt('(현재 : '+value+')   Your choice~!'));
+            } else{
+                alert('1~3중에 하나를 고르라구');
+                answer = Number(prompt('(현재 : '+value+')   도망칠 생각마.'));
+            };
+        };
+    </script>
+    <h1>넌 못이긴다~~</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test46</title>
+</head>
+<body>
+    <script>
+        var a ={'id':1};
+        function func(b){
+            b={'id':2};
+        }
+        func(a);
+        document.write(a.id+'</br>');
+
+        function func1(c){
+            c.id=3;
+        }
+        func1(a);
+        document.write(a.id+'</br>');
+    </script>
+</body>
+</html>

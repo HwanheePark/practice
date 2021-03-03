@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test15</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,5,6,7,8,9,10];
+        document.write(numbers.splice(3)+'제거된 것(return값) <br />');
+        document.write(numbers+'남아있는 것 <br />');
+        numbers.splice(1);
+        document.write(numbers+'<br />');
+        document.write(numbers+'<br />');
+
+        var alphabet = ['a','b','c','d','e'];
+        document.write(alphabet.splice(1,3,'abc','xyz',1,2,3)+'-return값 <br />');
+        document.write(alphabet+'<br />');
+        alphabet.shift();
+        alphabet.pop();
+        document.write(alphabet+'///shift는 앞제거 pop은 뒤제거 <br />');
+
+        var numbers2 = [2,1,4,8,3,6,7,9,0,5];
+        document.write(numbers2.sort()+'<br />');
+        document.write(numbers2.reverse()+'<br />');
+    </script>
+</body>
+</html>

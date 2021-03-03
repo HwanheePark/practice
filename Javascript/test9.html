@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습만이 살길이다</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            return '첫번째 return 실행후 종료'
+            return '222'
+        }
+        document.write(f1()+'<br />')
+        function parameter(a){
+            return a*10
+        }
+        document.write('<br />'+parameter(1)+'<br />'+'<br />'+parameter(3)+'<br />');
+        function parameter2(b, c){
+            return b*c;
+        }
+        document.write('<br />'+parameter2(2,100)+'<br />');
+        d = function(){
+            i = 0;
+            while(i<=10){
+                document.write(i+'<br />');
+                i += 1;
+            }
+        }
+        d();
+    </script>
+</body>
+</html>

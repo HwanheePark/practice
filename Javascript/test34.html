@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test34</title>
+</head>
+<body>
+    <script>
+        var a = function(){return 1;}();
+        document.write(a+'<br />')
+        var arr = []
+        for(var i=0;i<5;i++){
+            arr[i] = function(id){
+                return function(){
+                    return id;
+                }();
+            }(i);
+        }
+        for(var index in arr){
+            document.write(arr[index]+'<br />');
+        }
+    </script>
+</body>
+</html>

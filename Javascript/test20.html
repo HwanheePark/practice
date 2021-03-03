@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test20</title>
+</head>
+<body>
+    <script>
+        // function a(){
+        //     var i = 0;
+        // }
+        // for(var i=0;i<10;i++){
+        //     a();
+        //     document.write(i+'<br />');
+        // }
+        
+        function a(){
+            i = 0;//전역변수
+        }
+        for(var i=0;i<10;i++){
+            a();//0으로 초기화
+            document.write(i+'<br />');
+        }
+    </script>
+</body>
+</html>

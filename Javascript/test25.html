@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test25</title>
+</head>
+<body>
+    <script>
+        // for(i=0;i<1;i++){
+        //     var name = 'hello world';
+        // }
+        // document.write(name+'<br />');
+        var i = 5;
+        function a(){
+            var i = 10;
+            b();
+        }
+        function b(){
+            document.write(i+'<br />');
+        }
+        a();
+
+        function cal(func,num){
+            return func(num);
+        }
+        function increase(num){
+            return num + 1;
+        }
+        function decrease(num){
+            return num - 1;
+        }
+        document.write(cal(increase,10)+'<br />');
+        document.write(cal(decrease,10)+'<br />');
+    </script>
+</body>
+</html>

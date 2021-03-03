@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test12</title>
+</head>
+<body>
+    <script>
+        function re(){
+            return '반환 값';
+        }
+        document.write(re()+'<br />');
+        
+        function multi(multi10){
+            return multi10*10;
+        }
+        document.write(multi(10)+'<br />');
+
+        function multi2(multi1, multi2){
+            return multi1*multi2;
+        }
+        document.write(multi2(4,5)+'<br />');
+
+        (function (){
+            var i = 0;
+            while(i < 10){
+                document.write(i+'<br />');
+                i += 1;
+            }
+        })();
+        var li = ['a','b','c'];
+        li.push('d');
+        li.unshift('e');
+        li = li.concat(['f','g']);
+        document.write(li+'<br />');
+        </script>
+</body>
+</html>

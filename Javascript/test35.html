@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test35</title>
+</head>
+<body>
+    <script>
+        // function sum(arg1, arg2){
+        //     return arg1 + arg2;
+        // }
+        // document.write(sum(2,3)+'<br />');
+        // document.write(sum.apply(null,[2,3])+'<br />');
+        o1={val1:1,val2:2,val3:5}
+        o2={v1:10,v2:20,v3:30}
+        function sum(){
+            var _sum = 0;
+            for(var name in this){
+                _sum += this[name];
+            }
+            return _sum;
+        }
+        document.write(sum.apply(o1)+'<br />');
+        document.write(sum.apply(o2)+'<br />');
+    </script>
+</body>
+</html>

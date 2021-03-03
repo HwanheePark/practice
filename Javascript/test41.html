@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test41</title>
+</head>
+<body>
+    <script>
+        var p1 = {p1 : 1,p2 : 2,p3 : 3}
+        var m1 = {m1 : 100,m2 : 50,m3 : 20}
+        function plus(){
+            var _plus = 0;
+            for(name in this){
+                _plus += this[name];
+            }
+            return _plus;
+        }
+        function minus(){
+            var _minus = 0;
+            for(name in this){
+                _minus -= this[name];
+            }
+            return _minus;
+        }
+        document.write(plus.apply(p1)+'</br>'); //6
+        document.write(minus.apply(m1)+'</br>'); //-170
+    </script>
+</body>
+</html>

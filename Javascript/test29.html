@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test29</title>
+</head>
+<body>
+    <script>
+        function cal(func, num){
+            return func(num);
+        }
+        function increase(num){
+            return num + 1;
+        }
+        function decrease(num){
+            return num - 1;
+        }
+        document.write(cal(increase,10)+'<br />');
+        document.write(cal(decrease,10)+'<br />');
+
+        function cal2(mode){
+            var func = {
+                'plus' : function(left,right){return left+right;},
+                'minus' : function(left,right){return left-right;}
+            }
+            return func[mode];
+        }
+        document.write(cal2('plus')(20,10)+'<br />');
+        document.write(cal2('minus')(20,10)+'<br />');
+    </script>
+</body>
+</html>

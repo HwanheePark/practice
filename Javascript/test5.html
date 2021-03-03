@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+</head>
+<body>
+    <script>
+        var name = prompt('이름은?')
+        var age = prompt('나이는?')
+        var gender = prompt('성별은?')
+        if(gender === '남자' || gender==='남'){
+            gender = '사내자식'
+            alert('당신의 이름은 '+name+'이고 나이는 '+age+'이고 성별은 '+gender+'이다')
+        } else if(gender === '여자' || gender==='여'){
+            gender = 'lady'
+            alert('당신의 이름은 '+name+'이고 나이는 '+age+'이고 '+gender+'입니다')
+        } else{
+            alert('올바르게 입력해.')
+        }
+        // alert('당신의 이름은 '+name+'이고 나이는 '+age+'이고 성별은 '+gender+'이다')
+    </script>
+</body>
+</html>

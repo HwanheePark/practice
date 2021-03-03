@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test33</title>
+</head>
+<body>
+    <script>
+        // var arr = []
+        // for(var i=0;i<5;i++){
+        //     arr[i] = function(){
+        //         document.write(i+'<br />');
+        //     }
+        // }
+        // for(var index in arr){
+        //     arr[index]();
+        // }
+        var arr = []
+        for(i=0;i<5;i++){
+            arr[i]=function(){
+                return i;
+            }
+        }
+        for(var index in arr){
+            document.write(arr[index]()+'<br />');
+        }
+    </script>
+</body>
+</html>

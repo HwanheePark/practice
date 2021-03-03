@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test19</title>
+</head>
+<body>
+    <script>
+        // var vscope='global'
+        // function fscope(){
+        //     vscope='local'
+        //     document.write(vscope+'<br />');
+        // }
+        // fscope();
+        // document.write(vscope+'<br />');
+
+        // var vscope='global';
+        // function fscope(){
+        //     var vscope='local';
+        //     var lv='local variable';
+        //     document.write(lv+'<br />');
+        // }
+        // fscope();
+        // document.write(vscope+'<br />');
+        // document.write(lv+'<br />');
+
+        var vscope='global'
+        function fscope(){
+            vscope='local'
+            var vscope='var local'
+            document.write(vscope+'<br />');
+        }
+        fscope();
+        document.write(vscope+'<br />');
+    </script>
+</body>
+</html>

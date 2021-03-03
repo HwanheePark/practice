@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="C:\Users\Hwanhee Park\Desktop\Javascript\jQuery\jQuery.js"></script>
+    <title>test21</title>
+</head>
+<body>
+    <ul id="list">
+        <li>empty</li>
+        <li>empty</li>
+        <li>em</li>
+        <li>pty</li>
+    </ul>
+    <input type="button" id="execute_btn" value="execute">
+    <script>
+        for(a=0;a<10;a++){
+            document.write(a+'<br />');
+            if(a===5){
+                break;
+            }
+        }
+        var grades={
+            'list':{'Math':1,'Science':{'Physics':1,'Chemistry':2}},
+            'show':function(){
+                document.write('hello world');
+            }
+        }
+        document.write(grades['list']['Science']['Chemistry']+'<br />');
+        grades.show();
+        $('#execute_btn').click(function(){
+            $('#list li').text('coding everybody');
+        })
+        </script>
+</body>
+</html>

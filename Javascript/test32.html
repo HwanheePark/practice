@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test32</title>
+</head>
+<body>
+    <script>
+        function factory_movie(title){
+            return {
+                get_title : function(){
+                    return title;
+                },
+                set_title : function(_title){
+                    if(typeof _title === 'string'){
+                        title = _title
+                    } else {
+                        alert('문자로 입력하시오')
+                    }
+                }
+            }
+        }
+        ghost = factory_movie('ghost in the shell');
+        matrix = factory_movie('matrix');
+        document.write(ghost.get_title()+'<br />');
+        document.write(matrix.get_title()+'<br />');
+
+        ghost.set_title('공각');
+        document.write(ghost.get_title()+'<br />');
+    </script>
+</body>
+</html>
