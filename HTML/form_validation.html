@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      정규표현식을 이용해서<br>
+      알파벳으로 시작해서 숫자로 끝나는 ID입력
+      <br>
+      <input type="text" name="id" autofocus placeholder="id 입력" required
+      pattern="[a-zA-Z].+[0-9]">
+      <br>
+      <input type="email" name="email" placeholder="email" required>
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
