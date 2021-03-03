@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Creat Information
+    body 
+        h1 
+            a(href='/topic') Enter</a> the informaiton 
+        ul 
+            h2 
+                each topic in files
+                    li
+                        a(href='/topic/'topic) #{topic}
+        article
+            p 
+                h2 #{id}
+            p 
+                h3 #{data}
+        form(action="/topic" method='post')
+            p 
+                input(name='title' placeholder='Enter to informaiton')
+            p 
+                textarea(name='description')
+            p
+                input(type="submit")

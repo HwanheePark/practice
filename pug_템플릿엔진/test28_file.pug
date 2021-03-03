@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Creat list!
+    body
+        h1
+            a(href='/topic') Enter</a> the information!
+        ul
+            each topic in _files
+                h2
+                    a(href='/topic/'+topic) #{topic}<br>
+        article
+            p
+                h3 #{title}
+            p #{description}                
+        form(action='/topic' method='post')
+            p
+                input(type='text' name='title' placeholder='title')
+            p
+                textarea(name='description')
+            p
+                input(type='submit')
