@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자스스톤</title>
+    <style>
+        body {
+            font-size: 35px;
+            background: rgb(209, 209, 209);
+            margin-top: 30px;
+            user-select: none;
+        }
+        #me, #rival {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            margin-right: 100px;
+        }
+        #rival {
+            vertical-align: bottom;
+        }
+        #my-deck, #rival-deck {
+            display: inline-block;
+            vertical-align: top;
+            width: 600px;
+        }
+        #rival-deck, #rival-hero, #rival-cards, #my-cards, #my-hero, #my-deck {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .card {
+            display: inline-block;
+            text-align: center;
+            border: 3px solid black;
+            width: 100px;
+            height: 150px;
+            position: relative;
+        }
+        .card-name {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .card-att, .card-hp, .card-cost {
+            display: inline-block;
+            border: 1px solid gray;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .card-cost {
+            background: rgb(85, 85, 245);
+            bottom: auto;
+            top: 0;
+            right: 0;
+            color: beige;
+        }
+        .card-att {
+            background: chartreuse;
+            left: 0;
+        }
+        .card-hp {
+            background: tomato;
+            right: 0;
+        }
+        #my-cost, #rival-cost {
+            margin-top: 50px;
+            margin-right: 30px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="rival">
+        <div id="rival-hero">
+            <div class="card">
+                <div class="card-name">Enemy Hero</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+        </div>
+        <div id="rival-cards">
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+        </div>
+    </div>
+    <div id="rival-deck">
+        <div>Rival deck</div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div id="rival-cost">Cost : <span>10</span></div>
+    </div>
+    <hr>
+    <div id="me">
+        <div id="my-cards">
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+            <div class="card">
+                <div class="card-cost">2</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+        </div>
+        <div id="my-hero">
+            <div class="card">
+                <div class="card-name">My Hero</div>
+                <div class="card-att">5</div>
+                <div class="card-hp">10</div>
+            </div>
+        </div>
+    </div>
+    <div id="my-deck">
+        <div>My deck</div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div class="card">
+            <div class="card-cost">2</div>
+            <div class="card-att">5</div>
+            <div class="card-hp">10</div>
+        </div>
+        <div id="my-cost">Cost : <span>10</span></div>
+    </div>
+    <script src="자스스톤.js"></script>
+</body>
+</html>
