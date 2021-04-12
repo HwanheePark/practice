@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Relay</title>
+</head>
+<body>
+  <!-- <div id="word"></div>
+  <form>
+    <input id='answer' type="text">
+    <button>입력</button>
+  </form>
+  <div id="result"></div> -->
+
+  <script>
+    const word = document.createElement('div');
+    word.textContent = '기차';
+    document.body.appendChild(word);
+    const form = document.createElement('form');
+    document.body.appendChild(form);
+    const answer = document.createElement('input');
+    form.appendChild(answer);
+    const submit_button = document.createElement('button');
+    submit_button.textContent = '입력';
+    form.appendChild(submit_button);
+    const result = document.createElement('div');
+    document.body.appendChild(result);
+    answer.focus();
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (word.textContent[word.textContent.length-1] === answer.value[0]) {
+        result.textContent = '딩동댕!';
+        word.textContent = answer.value;
+        answer.value = '';
+        answer.focus();
+      } else {
+        result.textContent = '땡!';
+        answer.value = '';
+        answer.focus();
+      }
+    });
+  </script>
+</body>
+</html>
